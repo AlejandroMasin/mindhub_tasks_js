@@ -96,6 +96,10 @@ main .wrapper__section {
   min-width: 300px;
 }
 
+label[for="search-input"] {
+  display: none;
+}
+
 
 .cards-container {
   display: flex;
