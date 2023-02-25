@@ -100,6 +100,9 @@ label[for="search-input"] {
   display: none;
 }
 
+input#search-input {
+  margin-left: 1em;
+}
 
 .cards-container {
   display: flex;
@@ -109,6 +112,9 @@ label[for="search-input"] {
   gap: 20px;
   margin: auto;
   transition: all 0.5s ease-in-out;
+
+  min-width: 400px;
+  min-height: 500px;
 }
 
 .card {
@@ -118,8 +124,14 @@ label[for="search-input"] {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   padding: 15px;
   margin-top: 20px;
-  min-height: 340px;
+  min-height: 380px;
   width: 280px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .card img {
@@ -135,7 +147,9 @@ label[for="search-input"] {
 }
 
 .card p {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  min-height: 75px;
+
 }
 
 .card button {
