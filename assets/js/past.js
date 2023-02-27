@@ -9,10 +9,13 @@ for (let i = 0; i < eventos.length; i++) {
 let cards_container = document.getElementById("cards_container")
 cards_container.style.display = "none";
 
+//Creo una variable donde almacenar todas las tarjetas antes de incorporarlas
+let cardsHTML = ""
+
 for (let evento in eventos) {
 
     if (eventos[evento].date < fechaActual) {
-        crearTarjetas(evento);
+        cardsHTML += crearTarjetas(evento);
     }
 
 }
@@ -50,10 +53,11 @@ function crearTarjetas(evento) {
     card.appendChild(description);
     card.appendChild(details);
 
-    // Agregando la card al contenedor de cards
-    let cards_container = document.getElementById("cards_container")
-    cards_container.appendChild(card)
+    return card.outerHTML
 }
+
+// Agregando las cards al contenedor de cards
+cards_container.innerHTML = cardsHTML
 
 // Vuelvo a mostrar el container de  tarjetas
 cards_container.style.display = "flex";
