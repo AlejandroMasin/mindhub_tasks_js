@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <!-- Start Header -->
-    <header>
+
+    <header>  <!-- Start Header -->
 
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
@@ -55,7 +55,7 @@
 
     </header> <!-- End Header -->
 
-    <main> <!-- Start Header -->
+    <main>  <!-- Start Main -->
 
         <section>
             <div class="wrapper__section">
@@ -69,17 +69,8 @@
 
         <div class="container"> <!-- Start Container -->
 
-            <div class="left-section">
-                <input type="checkbox" id="checkbox1">
-                <label for="checkbox1">Category</label>
-                <input type="checkbox" id="checkbox2">
-                <label for="checkbox2">Category</label>
-                <input type="checkbox" id="checkbox3">
-                <label for="checkbox3">Category</label>
-                <input type="checkbox" id="checkbox4">
-                <label for="checkbox4">Category</label>
-                <input type="checkbox" id="checkbox5">
-                <label for="checkbox5">Category</label>
+            <div class="left-section" id="left_section">
+                <!-- Aqui van los checkboxes -->
             </div>
 
             <div class="right-section">
@@ -101,13 +92,14 @@
                     </div>
                 </div> -->
 
-            </div> <!--End Cards-->
-
-        </div> <!--End Container-->
+            </div>
+            <!--End Cards-->
+            <div id="no-results-message">No se encontraron resultados</div>
+        </div>                  <!-- End Container -->
 
     </main> <!--End Main-->
 
-    <footer> <!--Start Footer-->
+    <footer>  <!--Start Footer-->
 
         <div class="left-footer">
             <a href="https://www.instagram.com/"><img src="./assets/img/square-instagram.svg" alt="icono_instagram"></a>
@@ -119,6 +111,8 @@
             <span>COHORT FE03-TT</span>
         </div>
     </footer> <!--End Footer-->
+
+    <!-- BORRAR ESTO Start Modals -->
 
     <!-- Start Modals -->
     <div class="modal fade" id="mi-modal" tabindex="-1" aria-hidden="true">
@@ -160,7 +154,6 @@
 
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/home.js"></script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
