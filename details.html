@@ -13,6 +13,10 @@
 </head>
 
 <body>
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
     <!-- Start Header -->
     <header>
 
@@ -70,11 +74,15 @@
 
         </section>
 
-        <div class="container"> <!-- Start Container -->
+        <div class="loader_details">
+            <img src="./assets/img/blocks_loader.svg" alt="">
+        </div>
+
+        <div id="details" class="container"> <!-- Start Container -->
 
             <div class="modal__event align-middle">
 
-                <img class="modal__event__img img-fluid" src="./assets/img/notfound.jpeg" alt="event">
+                <img id="details__img" class="modal__event__img img-fluid" src="./assets/img/notfound.jpeg" alt="event">
 
                 <div class="modal__event__info">
                     <h3>AMAZING EVENTS</h3>
@@ -99,9 +107,9 @@
     <footer>
 
         <div class="left-footer">
-            <a href="https://www.instagram.com/"><img src="./assets/img/square-instagram.svg" alt="icono_instagram"></a>
-            <a href="https://www.facebook.com/"><img src="./assets/img/facebook.svg" alt="icono_facebook"></a>
-            <a href="https://www.whatsapp.com/"><img src="./assets/img/square-whatsapp.svg" alt="icono_whatsapp"></a>
+            <a target="blank" class="icon" href="https://www.instagram.com/"><img src="./assets/img/instagram.svg" alt="icono_instagram"></a>
+            <a target="blank" href="https://www.facebook.com/"><img src="./assets/img/facebook.svg" alt="icono_facebook"></a>
+            <a target="blank" href="https://www.whatsapp.com/"><img src="./assets/img/whatsapp.svg" alt="icono_whatsapp"></a>
         </div>
 
         <div class="right-footer">
@@ -111,7 +119,7 @@
     </footer>
     <!-- End Footer -->
 
-    <script src="./assets/js/data.js"></script>
+    <!-- <script src="./assets/js/data2.js"></script> -->
     <script src="./assets/js/details.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
